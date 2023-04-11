@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Append Method Example</title>
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$("#b1").click(function(){
+			$("p").append("<b>Append text</b>.");
+		});
+          $("#b2").click(function(){
+			$("ol").append("<li>Append text</li>.");
+		});
+		});
+	</script>
+</head>
+<body>
+     <p>This is a paragraph.</p>
+     <p>This is another paragraph.</p>
+
+     <ol>
+     	<li>List item 1</li>
+     	<li>List item 2</li>
+     	<li>List item 3</li>
+     </ol>
+     <button id="b1">Append text</button>
+     <button id="b2">Append list items</button>
+</body>
+</html>
